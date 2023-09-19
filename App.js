@@ -5,19 +5,24 @@ import { Card } from 'react-native-paper';
 
 // or any files within the Snack
 import AssetExample from './components/AssetExample';
+import Buton from './components/Buton';
+import Img from './components/Img';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.paragraph}>
-      </Text>
       <Card>
         <AssetExample />
       </Card>
+
+      <Img />
+
+      <Buton />
+
       <Text style={styles.paragraph}>
        Apollo César 3ºB
       </Text>
-      
+
     </SafeAreaView>
   );
 }
@@ -26,7 +31,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#000000',
+    backgroundColor: 'black',
     padding: 8,
   },
   paragraph: {
